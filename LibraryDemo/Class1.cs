@@ -10,7 +10,7 @@ namespace LibraryDemo
     {
         public string Test()
         {
-            return "Test";
+            return "Test - updating master directly.";
         }
     }
 }
