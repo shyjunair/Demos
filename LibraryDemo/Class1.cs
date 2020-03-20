@@ -8,9 +8,9 @@ namespace LibraryDemo
 {
     public class Class1
     {
-        public void Test()
+        public string Test()
         {
-
+            return "Test";
         }
     }
 }
