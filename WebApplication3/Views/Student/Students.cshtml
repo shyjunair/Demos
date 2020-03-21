@@ -1,0 +1,36 @@
+﻿@{
+    Page.Title = "Title goes here";
+    //Layout = "Your Layout Page goes here";
+}
+
+
+<div>
+    <br />
+    <br />
+    <table border="1">
+        <tr>
+            <th style="width: 50px;">ID</th>
+            <th style="width: 100px;">Name</th>
+            <th style="width: 150px;">Address</th>
+            <th style="width: 150px;">DOB</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Id
+                </td>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Address
+                </td>
+                <td>
+                    @item.DOB
+                </td>
+            </tr>
+        }
+    </table>
+    <br /><br />
+</div>
