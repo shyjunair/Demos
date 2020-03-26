@@ -10,11 +10,16 @@ namespace EventsDemo
    public class Demo
     {
         public delegate void DemoDelegate(string message);
+        public delegate string DemoDelegate3(int a, string y);
         public delegate int DemoDelegate2();
-
         public delegate void ValueChanged(object sender, EventArgs args);
 
         public event ValueChanged Changed;
+
+        //public void Method1(Func<int, int, string> del)
+        //{
+        //    //del()
+        //}
 
         public void Method1(string s)
         {
@@ -38,6 +43,11 @@ namespace EventsDemo
             var x = DeleDemo(delegate
             {
                 return 100;
+            });
+
+            var s = DeleDemo(delegate
+            {
+                return 200;
             });
 
             MyClass lib = new MyClass();
