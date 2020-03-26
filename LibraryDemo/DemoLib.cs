@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibraryDemo
 {
-    public class Class1
+    public class DemoLib
     {
         public string Test()
         {
